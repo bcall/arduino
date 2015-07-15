@@ -14,13 +14,11 @@ void setup() {
   
   delay(30000);
   
-  Keyboard.set_key1(KEY_ENTER);
-  Keyboard.send_now();
-  
-  delay(200);
-  
-  Keyboard.set_key1(0);
-  Keyboard.send_now();
+  int i;
+  for (i=0; i<80; i++) {
+    Mouse.move(-127, -127);
+    delay(5);
+  }
 
   return;
 }
