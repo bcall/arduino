@@ -80,7 +80,7 @@ void setup() {
 
   delay (5000);
 
-  Keyboard.print("/Volumes/Macintosh\ HD/usr/bin/curl https://github.com/callbrian/osx_provision/recovery_bootstrap.sh > /Volumes/Macintosh\ HD/var/tmp/it-dept/");
+  Keyboard.print("/Volumes/Macintosh\\ HD/usr/bin/curl https://github.com/callbrian/osx_provision/recovery_bootstrap.sh > /Volumes/Macintosh\\ HD/var/tmp/it-dept/");
   
   return;
 }
