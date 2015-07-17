@@ -13,7 +13,7 @@ void setup() {
   Keyboard.set_modifier(0);
   Keyboard.set_key1(0);
   Keyboard.send_now();
-  delay(40000);
+  delay(70000);
 
   // Select English as the main language
   Keyboard.set_key1(KEY_ENTER);
@@ -69,7 +69,7 @@ void setup() {
   Keyboard.send_now();
   delay (5000);
 
-  Keyboard.print("mkdir /Volumes/Macintosh\\ HD/var/tmp/it-dept/");
+  Keyboard.print(F("mkdir /Volumes/Macintosh\\ HD/var/tmp/it-dept/"));
   delay (100);
 
    // Hit return
@@ -79,7 +79,7 @@ void setup() {
   Keyboard.send_now();
   delay (100);
 
-  Keyboard.print("/Volumes/Macintosh\\ HD/usr/bin/curl -L https://raw.githubusercontent.com/callbrian/osx_provision/master/recovery_bootstrap.sh > /Volumes/Macintosh\\ HD/var/tmp/it-dept/recovery_bootstrap.sh");
+  Keyboard.print(F("/Volumes/Macintosh\\ HD/usr/bin/curl -L https://raw.githubusercontent.com/callbrian/osx_provision/master/recovery_bootstrap.sh > /Volumes/Macintosh\\ HD/var/tmp/it-dept/recovery_bootstrap.sh"));
   delay (100);
   
   Keyboard.set_key1(KEY_ENTER);
@@ -88,7 +88,7 @@ void setup() {
   Keyboard.send_now();
   delay (100);
 
-  Keyboard.print("bash /Volumes/Macintosh\\ HD/var/tmp/it-dept/recovery_bootstrap.sh");
+  Keyboard.print(F("bash /Volumes/Macintosh\\ HD/var/tmp/it-dept/recovery_bootstrap.sh"));
   delay (100);
   
   Keyboard.set_key1(KEY_ENTER);
