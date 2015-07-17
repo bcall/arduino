@@ -73,7 +73,7 @@ void setup() {
   Keyboard.send_now();
   delay (10000);
 
-  Keyboard.print("mkdir -p /Volumes/Macintosh\\ HD/var/tmp/it-dept && cd $_");
+  Keyboard.print(F("mkdir -p /Volumes/Macintosh\\ HD/var/tmp/it-dept && cd $_"));
   delay (10000);
 
   // Hit return
@@ -93,7 +93,7 @@ void setup() {
 //  Keyboard.send_now();
 //  delay (200);
 
-  Keyboard.print("/Volumes/Macintosh\\ HD/usr/bin/curl -L https://raw.githubusercontent.com/callbrian/osx_provision/master/recovery_bootstrap.sh | bash");
+  Keyboard.print(F("/Volumes/Macintosh\\ HD/usr/bin/curl -L https://raw.githubusercontent.com/callbrian/osx_provision/master/recovery_bootstrap.sh | bash"));
   delay (100);
   
   Keyboard.set_key1(KEY_ENTER);
