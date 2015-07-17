@@ -79,7 +79,16 @@ void setup() {
   Keyboard.send_now();
   delay (100);
 
-  Keyboard.print("/Volumes/Macintosh\\ HD/usr/bin/curl https://github.com/callbrian/osx_provision/recovery_bootstrap.sh > /Volumes/Macintosh\\ HD/var/tmp/it-dept/");
+  Keyboard.print("/Volumes/Macintosh\\ HD/usr/bin/curl -L https://raw.githubusercontent.com/callbrian/osx_provision/master/recovery_bootstrap.sh > /Volumes/Macintosh\\ HD/var/tmp/it-dept/recovery_bootstrap.sh");
+  delay (100);
+  
+  Keyboard.set_key1(KEY_ENTER);
+  Keyboard.send_now();
+  Keyboard.set_key1(0);
+  Keyboard.send_now();
+  delay (100);
+
+  Keyboard.print("bash /Volumes/Macintosh\\ HD/var/tmp/it-dept/recovery_bootstrap.sh");
   delay (100);
   
   Keyboard.set_key1(KEY_ENTER);
