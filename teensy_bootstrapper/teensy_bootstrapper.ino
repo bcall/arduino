@@ -1,18 +1,21 @@
 void setup() {
 
-  // Get into Recovery Partition
-  delay (3000);
-  
+  int i;
+  for (i=0; i<10; i++) {
+  // Press CMD + R
   Keyboard.set_modifier(MODIFIERKEY_GUI);
   Keyboard.send_now();
   Keyboard.set_key1(KEY_R);
   Keyboard.send_now();
-  delay(5000);
+  delay(500);
 
   // Release keys and wait for machine to boot
   Keyboard.set_modifier(0);
   Keyboard.set_key1(0);
   Keyboard.send_now();
+  delay(500);
+  }
+  
   delay(70000);
 
   // Select English as the main language
@@ -23,7 +26,6 @@ void setup() {
   delay(2000);
 
   // Move the cursor to the upper left corner
-  int i;
   for (i=0; i<80; i++) {
     Mouse.move(-127, -127);
     delay(5);
